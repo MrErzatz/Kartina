@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Kartina.Models.Utilisateur>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Home/About.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prenom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotPass)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Civilité)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telephone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAdresseNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProfilUtilisateurNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotPass)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Civilité)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAdresseNavigation.IdAdresse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProfilUtilisateurNavigation.TypeProfil)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdUtilisateur">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdUtilisateur">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdUtilisateur">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

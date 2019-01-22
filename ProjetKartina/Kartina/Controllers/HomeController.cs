@@ -24,7 +24,10 @@ namespace Kartina.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Prenom"] = "Jean" ;
+            ViewData["Nom"] = "Bonot" ;
+            ViewData["Pays"] = "Groland" ;
+            ViewData["Descriptif"] = "Un sacré ce Jean Bonot !" ;
 
             return View();
         }
@@ -39,5 +42,7 @@ namespace Kartina.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
     }
 }

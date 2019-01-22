@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Kartina.Models;
+
 
 namespace Kartina
 {
@@ -33,6 +36,9 @@ namespace Kartina
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            var connection = @"Server=M2IFORM-0C9DND9\SQLEXPRESS;Database=Kartina_V2;Trusted_Connection=True;ConnectRetryCount=0";
+            services.AddDbContext<Kartina_V2Context>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
