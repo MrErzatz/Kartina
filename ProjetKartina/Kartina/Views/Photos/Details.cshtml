@@ -1,0 +1,78 @@
+﻿@model Kartina.Models.Photo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Photo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdFormat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdFormat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdTheme)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdTheme)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TitrePhoto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TitrePhoto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionPhoto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionPhoto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrixPhoto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrixPhoto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LargeurPhoto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LargeurPhoto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HauteurPhoto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HauteurPhoto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateDepose)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateDepose)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdOrientationNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdOrientationNavigation.NomOrientation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUtilisateurNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdUtilisateurNavigation.IdUtilisateur)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdPhoto">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

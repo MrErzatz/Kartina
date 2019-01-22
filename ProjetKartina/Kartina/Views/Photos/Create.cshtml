@@ -1,0 +1,76 @@
+﻿@model Kartina.Models.Photo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Photo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdFormat" class="control-label"></label>
+                <input asp-for="IdFormat" class="form-control" />
+                <span asp-validation-for="IdFormat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdTheme" class="control-label"></label>
+                <input asp-for="IdTheme" class="form-control" />
+                <span asp-validation-for="IdTheme" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TitrePhoto" class="control-label"></label>
+                <input asp-for="TitrePhoto" class="form-control" />
+                <span asp-validation-for="TitrePhoto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescriptionPhoto" class="control-label"></label>
+                <input asp-for="DescriptionPhoto" class="form-control" />
+                <span asp-validation-for="DescriptionPhoto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrixPhoto" class="control-label"></label>
+                <input asp-for="PrixPhoto" class="form-control" />
+                <span asp-validation-for="PrixPhoto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LargeurPhoto" class="control-label"></label>
+                <input asp-for="LargeurPhoto" class="form-control" />
+                <span asp-validation-for="LargeurPhoto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HauteurPhoto" class="control-label"></label>
+                <input asp-for="HauteurPhoto" class="form-control" />
+                <span asp-validation-for="HauteurPhoto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdUtilisateur" class="control-label"></label>
+                <select asp-for="IdUtilisateur" class ="form-control" asp-items="ViewBag.IdUtilisateur"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdOrientation" class="control-label"></label>
+                <select asp-for="IdOrientation" class ="form-control" asp-items="ViewBag.IdOrientation"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateDepose" class="control-label"></label>
+                <input asp-for="DateDepose" class="form-control" />
+                <span asp-validation-for="DateDepose" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
