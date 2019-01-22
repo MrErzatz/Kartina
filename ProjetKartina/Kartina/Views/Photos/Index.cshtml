@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Kartina.Models.Photo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdFormat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTheme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TitrePhoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriptionPhoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrixPhoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LargeurPhoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HauteurPhoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateDepose)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdOrientationNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUtilisateurNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdFormat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTheme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TitrePhoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriptionPhoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrixPhoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LargeurPhoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HauteurPhoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateDepose)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdOrientationNavigation.NomOrientation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUtilisateurNavigation.IdUtilisateur)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdPhoto">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdPhoto">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdPhoto">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
