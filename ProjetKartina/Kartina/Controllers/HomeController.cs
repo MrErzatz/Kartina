@@ -22,12 +22,12 @@ namespace Kartina.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Artiste()
         {
             ViewData["Prenom"] = "Jean" ;
             ViewData["Nom"] = "Bonot" ;
             ViewData["Pays"] = "Groland" ;
-            ViewData["Descriptif"] = "Un sacré ce Jean Bonot !" ;
+            ViewData["Descriptif"] = "Un sacré ce Jean Bonot !";
 
             return View();
         }

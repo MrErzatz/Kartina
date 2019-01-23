@@ -2,64 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
-
-
 <body>
-    <header>
-        <ul id="upperhead">
-            <li id="l1">
-                <a href="index.html">
-                    <img src="~/images/logo-w.png" title="Kartina photo" alt="Logo Kartina">
-                </a>
-                <div id="slogan">La photo qu'il vous faut</div>
-            </li>
 
-            <li id="l2">
-                <a href="connexion.html" title="Cliquez ici pour vous connecter">
-                    <i class="fas fa-user"></i>
-                    <span>Connexion</span>
-                </a>
-            </li>
-
-            <li id="l3">
-                <a href="aide.html" title="Comment utiliser Kartina">
-                    <i class="far fa-question-circle"></i>
-                    <span>Aide</span>
-                </a>
-            </li>
-
-            <li id="l4">
-                <div onclick="openModal();">
-                    <img src="~/images/fr.svg" alt="Français">
-                    <span>FR</span>
-                </div>
-            </li>
-
-            <li id="l5">
-                <a href="panier.html" title="Panier Kartina">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Panier</span>
-                </a>
-            </li>
-
-            <li id="l6">
-                <form name="s" action="" method="post">
-                    <input type="text" name="search" placeholder="Rechercher sur Kartina...">
-                    <i class="fa fa-search"></i>
-                </form>
-            </li>
-
-        </ul>
-        <nav>
-            <span id="menuPhoto">Photographies</span>
-            <span>Nouveautés</span>
-            <span><a href="../Home/Contact">Artistes</a></span>
-            <span>Derniers exemplaires</span>
-        </nav>
-        <div id="breadcrumb">
-
-        </div>
-    </header>
     <main>
         <section>
 
@@ -72,37 +16,37 @@
             <article id="a2">
                 <div>
                     <img src="photos/nature1.jpeg">
-                    <div> Paul</div>
+                    <div><a href="../Home/Artiste" name="Paul">Paul</a></div>
                     <div> Nature</div>
                     <div> A partir de 100$</div>
                 </div>
                 <div>
                     <img src="photos/nature2.jpeg">
-                    <div>James</div>
+                    <div><a href="../Home/Artiste" name="James">James</a></div>
                     <div>red apple</div>
                     <div>A partir de 10$</div>
                 </div>
                 <div>
                     <img src="photos/nature3.jpeg">
-                    <div>Aurélien</div>
+                    <div><a href="../Home/Artiste" name="Aurélien">Aurélien</a></div>
                     <div>red apple</div>
                     <div>A partir de 50$</div>
                 </div>
                 <div>
                     <img src="photos/urbain1.jpeg">
-                    <div>Patrick</div>
+                    <div><a href="../Home/Artiste" name="Paul">Paul</a></div>
                     <div></div>
                     <div>A partir de 60$</div>
                 </div>
                 <div>
                     <img src="photos/urbain2.jpeg">
-                    <div>Antoine</div>
+                    <div><a href="../Home/Artiste" name="Antoine">Antoine</a></div>
                     <div>red apple</div>
                     <div>A partir de 70$</div>
                 </div>
                 <div>
                     <img src="photos/urbain3.jpeg">
-                    <div>Ludovic</div>
+                    <div><a href="../Home/Artiste" name="Ludovic">Ludovic</a></div>
                     <div>red apple</div>
                     <div>A partir de 80$</div>
                 </div>
@@ -137,69 +81,5 @@
 
     </main>
 
-    <footer>
-        <ul>
-            <li id="lf1">
-                <div onclick="openModal();">
-                    <img src="~/images/fr.svg" alt="Français">
-                    <span>FR</span>
-                </div>
-            </li>
-            <li id="lf2">
-                <a href="mentionslegales.html" title="Mentions légales">
-                    <span>Mentions légales</span>
-                </a>
-            </li>
-            <li id="lf3">
-                <a href="cgu.html" title="Conditions générales d'utilisation">
-                    <span>Conditions générales d'utilisation</span>
-                </a>
-            </li>
-            <li id="lf4">
-                <a href="https://fr-fr.facebook.com/" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
-            <li id="lf5">
-                <a href="https://twitter.com/?lang=fr" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-    <div id="submenu">
-
-        <div>
-            <p class="title">Orientation</p>
-            <a href="portrait.html">
-                <p>Portrait</p>
-            </a>
-            <a href="panoramique.html">
-                <p>Panoramique</p>
-            </a>
-            <a href="paysage.html">
-                <p>Paysage</p>
-            </a>
-            <a href="carre.html">
-                <p>Carré</p>
-            </a>
-        </div>
-
-        <div>
-            <p class="title">Format</p>
-            <a href="classique.html">
-                <p>Classique</p>
-            </a>
-            <a href="grand.html">
-                <p>Grand</p>
-            </a>
-            <a href="geant.html">
-                <p>Géant</p>
-            </a>
-            <a href="collector">
-                <p>Collector</p>
-            </a>
-        </div>
-
-    </div>
+    
 </body>

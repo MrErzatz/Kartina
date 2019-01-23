@@ -245,7 +245,7 @@ using Kartina.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1871, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80f9c3202a044adeac75750448f9008f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ba82d2c5bda4e39915347697c18189e", async() => {
                 BeginContext(1928, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -280,7 +280,7 @@ using Kartina.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1944, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76dbcda6b4ac4d6f98cbd69231b1dcec", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55b661bc1b81446a99c9f03cd52affd3", async() => {
                 BeginContext(1966, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

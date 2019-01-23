@@ -53,7 +53,6 @@ C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netc
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Kartina.TagHelpers.output.cache
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Kartina.RazorCoreGenerate.cache
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Photos.g.cshtml.cs
@@ -80,3 +79,4 @@ C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netc
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Utilisateurs\Edit.g.cshtml.cs
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Utilisateurs\Index.g.cshtml.cs
 C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Utilisateurs\Utilisateurs.g.cshtml.cs
+C:\Users\M2iformation\Desktop\ProjetKartina\ProjetKartina\Kartina\obj\Debug\netcoreapp2.1\Razor\Views\Home\Artiste.g.cshtml.cs
